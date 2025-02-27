@@ -7,15 +7,11 @@ const callBack = () =>{
 const response = async()=>{
     try{
         console.log('I print frist');
-        await sleep(awaitTimes);
-        callBack();
+        setTimeout(callBack, awaitTimes);
         console.log('I print third');
     }catch(e){
         console.log(e)
     }
-}
-function sleep(ms){
-    return new Promise(resolve=>setTimeout(resolve, ms))
 }
 
 response();
