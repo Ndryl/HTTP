@@ -8,4 +8,7 @@ const response = async ()=>{
     console.log(`Resolve with ${message}`)
 }
 
+
+console.log('I print frist')
 response()
+console.log("I print after response")
